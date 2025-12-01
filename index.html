@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дашборд продуктивности | Виджеты</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-chart-line"></i>
+                <h1>Дашборд продуктивности</h1>
+            </div>
+            <p class="subtitle">Управляйте задачами, временем и мотивацией</p>
+        </div>
+        <div class="controls">
+            <button id="add-todo" class="btn btn-primary">
+                <i class="fas fa-tasks"></i> Задачи
+            </button>
+            <button id="add-quote" class="btn btn-primary">
+                <i class="fas fa-quote-right"></i> Цитаты
+            </button>
+            <button id="add-time" class="btn btn-primary">
+                <i class="fas fa-clock"></i> Время
+            </button>
+            <button id="add-weather" class="btn btn-primary">
+                <i class="fas fa-cloud-sun"></i> Погода
+            </button>
+            <button id="add-stats" class="btn btn-primary">
+                <i class="fas fa-chart-bar"></i> Статистика
+            </button>
+            <button id="add-calendar" class="btn btn-primary">
+                <i class="fas fa-calendar-alt"></i> Календарь
+            </button>
+        </div>
+    </header>
+    
+    <main class="dashboard-container">
+        <div class="dashboard-info">
+            <p>Добавляйте виджеты кнопками выше. Каждый виджет можно свернуть или закрыть.</p>
+        </div>
+        <div id="dashboard" class="dashboard"></div>
+    </main>
+    
+    <footer class="footer">
+        <p>Дашборд продуктивности &copy; 2024 | Использует принципы ООП и современный JavaScript</p>
+    </footer>
+    
+    <script type="module" src="main.js"></script>
+</body>
+</html>
